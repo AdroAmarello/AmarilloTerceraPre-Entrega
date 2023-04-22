@@ -7,9 +7,18 @@ html {
     font-family: 'Poppins', sans-serif;
     font-size: 62.5%; /* 1rem=10px */
 }
+
 /* HEADER - NAV */
+
+.top {
+    display: none;
+}
 header{
     height: 80px;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 .headerNav {
     background-color: lightcyan;
@@ -23,7 +32,7 @@ header{
 .headerLogo {
     width: 20%;
     height: 100%;
-    padding: 10px 15px;
+    padding: 10px 30px;
 }
 .headerLogo a {
     display: inline-block;
@@ -35,26 +44,42 @@ header{
 .headerMenu {
     width: 80%;
     height: 100%;
-    padding-top: 25px;
     text-align: right;
-    /* display: flex;
-    justify-content: end; */
+}
+.menuNav {
+    height: 100%;
+    padding-right: 15px;
+    margin: 0;
 }
 .menuNav li{
-    display: inline;
+    display: inline-block;
+    height: 100%;
     font-size: 2rem;
-    padding: 5px 15px;
-    border-right: solid 1px black; 
 }
-.menuNav li:last-child{
-    border: none;
+.menuNav li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 25px 15px;
 }
-.menuNav .menuContacto{
-    border-style: none;
+.menuNav li:hover {
+    background:content-box linear-gradient(lightcyan, blue);
 }
-a {
-    text-decoration: none;
-    color: black;
+.menuNav li a:hover{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.volverArriba a i{
+    font-size: 50px;
+    color: gray;
+    position: fixed;
+    bottom: 120px;
+    left: 15px;
+    opacity: .7;
+    display: none;
+}
+.container {
+    padding:0;
 }
 
 /* INDEX */
@@ -62,7 +87,6 @@ a {
 p {
     text-indent: 30px;
 }
-
 .bioIndex, .tyc_blg{
     margin: 20px auto;
     align-items: center;
@@ -101,11 +125,11 @@ p {
 .bioTexto p, .bioTexto a{
     font-size: 15px;
 }
-
 .bioImg img{
-    height: 280px;
+    object-fit: cover;
+    height: 100%;
+    width:100%;
 }
-
 article .row{
     margin: 0;
     align-items: center;
@@ -113,9 +137,6 @@ article .row{
 .tyc_blg {
     border: none;
 }
-/* .tycIndex {
-    border: solid 1px black;
-} */
 .tyc_blgTexto {
     padding: 0 15px;
 }
@@ -136,18 +157,6 @@ article .row{
 }
 .tyc_blgImg img {
     height: 200px;
-}
-
-@media screen and (max-width: 768px) {
-    .tyc_blgTexto {
-        margin-top: 20px
-    }
-}
-
-@media screen and (max-width: 524px) {
-    .bioImg img {
-        height: 200px;
-    }
 }
 
 /* FOOTER */
@@ -173,39 +182,28 @@ article .row{
 }
 
 /* BIO */
+
+.noPadd {
+    padding: 0;
+}
 .bio {
-    width: 100%;
-    height: 700px;
-    position:relative;
-    margin: 20px 0;
-    padding-bottom: 20px;
-    border-bottom: dashed 1px grey;
+    margin: 20px auto;
+    align-items: center;
+    padding: 20px 0 40px;
 }
 .TextoBio_1, .TextoBio_2 {
-    width: 60%;
-    padding: 20px 40px;
-}
-.TextoBio_1 {
-    height: 300px;
-}
-.TextoBio_2 {
-    height: 400px;
+    margin-bottom: 40px;
 }
 .ImgBio {
-    width: 40%;
     height: 100%;
-    padding: 20px 10px;
+    padding: 0px 40px;
     display: inline;
     text-align: center;
-    position: absolute;
-    top: 0;
-}
-.TextoBio_1 {
-    position: relative;
 }
 .TextoBio_1 h1, .TextoBio_2 h2 {
     font-size: 25px;
     margin-bottom: 15px;
+    text-align: center;
 }
 .TextoBio_1 p, .TextoBio_2 p{
     font-size: 15px;
@@ -213,7 +211,9 @@ article .row{
     text-align: justify;
 }
 .ImgBio img {
-    height: 600px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 /* TALLERES Y CURSOS */
@@ -254,7 +254,6 @@ article .row{
     margin-bottom: 15px;
     text-align: justify;
 }
-
 .ImgTalleres {
     width: 40%;
     height: 400px;
@@ -268,7 +267,6 @@ article .row{
 .ImgTalleres img {
     height: 280px;
 }
-
 .TextoTalleres h3{
     font-size: 20px;
     margin-left: 15px;
@@ -286,7 +284,6 @@ article .row{
     margin-left: 15px;
     font-style: normal;
 }
-
 .cursoPromo {
     width: 560px;
     height: 100%;
@@ -349,7 +346,6 @@ article .row{
 .ImgBlog_2 img {
     object-position: top;
 }
-
 .TextoBlog_1 h1, .TextoBlog_2 h2 {
     font-size: 25px;
     margin-bottom: 15px;
@@ -381,7 +377,6 @@ article .row{
     font-size: 25px;
     margin-bottom: 15px;
 }
-
 .conTexto form {
     width: 400px;
     padding: 30px;
@@ -413,4 +408,69 @@ article .row{
 }
 .formBotones {
     text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .tyc_blgTexto {
+        margin-top: 20px
+    }
+}
+@media screen and (max-width: 675px) {
+    header{
+        height: auto;
+    }
+    .top {
+        display: inline-block;
+        height: 30px;
+    }
+    .headerNav {
+        height: auto;
+    }
+    .headerLogo {
+        display: none;
+    }
+    .headerMenu{
+        width: 100%;
+        text-align: center;
+    }
+    .menuNav li{
+        display: inline-block;
+        font-size: 1.7rem;
+    }
+    .menuNav li a {
+        padding: 15px 15px;
+    }
+    .volverArriba a i{
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media screen and (max-width: 498px) {
+    .top {
+        height: 160px;
+    }
+    .headerMenu ul{
+        padding-left: 0;
+    }
+    .menuNav{
+        padding: 0;
+    }
+    .menuNav li{
+        display: block;
+    }
+    .menuNav li a {
+        padding: 5px 15px;
+    }
+    .TextoBio_2{
+        margin-bottom: 0;
+    }
+    .ImgBio{
+        display: none;
+    }
 }
