@@ -1,0 +1,10 @@
+// Reseteo de Css //
+@use './base/reset';
+
+// Tipografía y tamaño de rem//
+@use './base/typo';
+
+a {
+    text-decoration: none;
+    color: black;
+}
