@@ -1,0 +1,13 @@
+// Botón para ir al comienzo de página //
+.top {
+    display: none;
+}
+.volverArriba{
+    font-size: 50px;
+    color: gray;
+    position: fixed;
+    bottom: 120px;
+    left: 15px;
+    opacity: .7;
+    display: none;
+}
