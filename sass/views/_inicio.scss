@@ -1,0 +1,77 @@
+.bioIndex, .tyc_blg{
+    margin: 20px auto;
+    align-items: center;
+    padding: 20px 0 40px;
+}
+.bioIndex {
+    border-bottom: dashed 1px $colorSeparador;
+}
+.TextoIndex{
+    padding: 0;
+    display: inline-block;
+    text-align: right;
+    margin: 0 0 15px; 
+
+    h1, h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    p {
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+
+    a {
+        font-style: italic;
+    }
+}
+.bioTexto {
+    margin: 0 0 15px;
+    padding: 0 40px;
+    
+    h1 {
+        font-size: $titulo;
+    }
+
+    p, a {
+        font-size: $parrafo;
+    }
+
+    a:hover {
+        @include hoversBack;
+    }
+}
+.ImgIndex {
+    padding: 0 40px;
+    @include displayImg;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+.tyc_blgTexto {
+    padding: 0 15px;
+
+    h2 {
+        font-size: $titulo;
+        margin-bottom: 15px;
+    }
+    
+    p, a {
+        font-size: $parrafo;
+    }
+    a:hover{
+        @include hoversBack;
+    }
+}
+.tyc_blgImg {
+    padding: 0 10px;
+    @include displayImg;
+
+    img {
+        height: 200px;
+    }
+}

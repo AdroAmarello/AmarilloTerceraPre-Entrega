@@ -1,0 +1,16 @@
+@mixin hovers
+{
+    color: $colorResaltado;
+    text-shadow: 1px 1px 1px $colorEnlace;
+}
+@mixin hoversBack
+{
+    color: $colorResaltado;
+    text-shadow: 1px 1px 1px $colorEnlace;
+    background:content-box linear-gradient(transparent, $colorSecundario);
+}
+@mixin displayImg
+{
+    display: inline-block;
+    text-align: center;
+}
