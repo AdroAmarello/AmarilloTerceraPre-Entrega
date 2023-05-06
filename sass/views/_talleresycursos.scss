@@ -1,0 +1,67 @@
+.Talleres{
+    margin: 20px auto;
+    align-items: center;
+    padding: 20px 0 40px;
+    border-bottom: dashed 1px $colorSeparador;
+    
+    .noPadd {
+        padding: 0;
+    }
+    
+
+    .TextoTalleres {
+        margin-bottom: 40px;
+
+        h1 {
+            font-size: $titulo;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        p {
+            font-size: $parrafo;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        h3 {
+            font-size: $subtitulo;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .proxTalleres {
+            margin-left: 15px;
+            padding-left: 15px;
+            list-style-type: square;
+            font-size: $parrafo;
+            font-style: italic;
+        }
+
+        .mesTalleres {
+                margin-left: 15px;
+                font-style: normal;
+
+                a {
+                    text-decoration: underline;
+
+                    &:hover {
+                        @include hoversBack;
+                    }
+                }
+        }
+    }
+
+    .ImgTalleres {
+        height: 100%;
+        padding: 0 40px;
+        @include displayImg;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="shortcut icon" href="multimedia/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../multimedia/favicon.png" type="image/x-icon">
         <title>Juan Ratón Pérez - Sitio Oficial</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,19 +23,19 @@
         <span class="top" id="topPagina"></span>
         <header>
             <nav class="headerNav">
-                <div class="headerLogo">
+                <div  class="navLogo">
                     <a href="../index.html"><img src="../multimedia/JuanPerezLogo.png" alt="Juan Perez Firma"></a> 
                 </div>
-                <div class="headerMenu">
-                    <ul class="menuNav">
+                <div class="navMenu">
+                    <ul class="menuList">
                         <li>
                             <a href="../index.html">Inicio</a>
                         </li>
                         <li>
-                            <a href="bio.html">Bio</a>
+                            <a href="#">Bio</a>
                         </li>
                         <li>
-                            <a href="#">Talleres y Cursos</a>
+                            <a href="talleresycursos.html">Talleres y Cursos</a>
                         </li>
                         <li>
                             <a href="blog.html">Blog</a>
@@ -46,73 +46,79 @@
                     </ul>
                 </div>
             </nav>
-            <div class="volverArriba">
-                <a href="#topPagina"><i class="fa-solid fa-circle-chevron-up"></i></a>
+            <div>
+                <a href="#topPagina"><i class="volverArriba fa-solid fa-circle-chevron-up"></i></a>
             </div>
         </header>
-    <section class="Talleres">
-        <article>
-            <div class="TextoTalleres">
-                <h1>Talleres</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt ex nam officia nihil illum velit, fugiat provident perferendis soluta delectus quaerat culpa, distinctio nemo rerum laudantium, officiis sit laboriosam placeat minima sapiente architecto suscipit. 
-                </p>
-                <h3>Próximos Talleres</h3>
-                <ul class="proxTalleres"> 
-                    <li>Abril
-                        <ul class="mesTalleres">
-                            <li>
-                                Sábado 15/04 - Taller de Timba - Estudio Kadenza, Calle Cualquiera 123. <i><a href="https://goo.gl/maps/nUUbpJK8PMa1uxNb6">(Ver ubicación en Google Maps)</a></i>
+        <main class="container">
+            <div class="row Talleres">
+                <section class="TextoTalleres noPadd col-xl-6">
+                        <h1>Talleres</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt ex nam officia nihil illum velit, fugiat provident perferendis soluta delectus quaerat culpa, distinctio nemo rerum laudantium, officiis sit laboriosam placeat minima sapiente architecto suscipit. 
+                        </p>
+                        <h3>Próximos Talleres</h3>
+                        <ul class="proxTalleres"> 
+                            <li>Abril
+                                <ul class="mesTalleres">
+                                    <li>
+                                        Sábado 15/04 - Taller de Timba - <i><a href="https://goo.gl/maps/nUUbpJK8PMa1uxNb6" target="_blank">Estudio Kadenza, Calle Cualquiera 123.</a></i>
+                                    </li>
+                                    <li>
+                                        Domingo 23/04 - Taller de Rumba - Estudio Saoco, Calle Nidea 321. 
+                                        <i><a href="https://goo.gl/maps/RNirbupeEToTUBUH8">(Ver ubicación en Google Maps)</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li>
-                                Domingo 23/04 - Taller de Rumba - Estudio Saoco, Calle Nidea 321. <i><a href="https://goo.gl/maps/RNirbupeEToTUBUH8">(Ver ubicación en Google Maps)</a>
+                            <li>Mayo
+                                <ul class="mesTalleres">
+                                    <li>
+                                        Domingo 07/05 - Taller de Timba - La Salsera, Calle Yatay 961. 
+                                        <i><a href="https://goo.gl/maps/fGrfm1KjkALYmiyi7">(Ver ubicación en Google Maps)</a></i>
+                                    </li>
+                                    <li>
+                                        Sábado 13/05 - Taller de Musicalidad con música en vivo - El Toque Cimarrón, Calle Perú 571. 
+                                        <i><a href="https://goo.gl/maps/nDvSjzVzFni2bun87">(Ver ubicación en Google Maps)</a></i>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li>Mayo
-                        <ul class="mesTalleres">
-                            <li>
-                                Domingo 07/05 - Taller de Timba - La Salsera, Calle Yatay 961. <i><a href="https://goo.gl/maps/fGrfm1KjkALYmiyi7">(Ver ubicación en Google Maps)</a></i>
-                            </li>
-                            <li>
-                                Sábado 13/05 - Taller de Musicalidad con música en vivo - El Toque Cimarrón, Calle Perú 571. <i><a href="https://goo.gl/maps/nDvSjzVzFni2bun87">(Ver ubicación en Google Maps)</a></i>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                </section>
+                <div class="ImgTalleres col-xl-5">
+                    <img src="../multimedia/calendario.png" alt="Calendario">
+                </div>
             </div>
-            <div class="ImgTalleres">
-                <img src="../multimedia/calendario.png" alt="Calendario">
+            <div class="row Cursos">
+                <section class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <h2>Cursos Online</h2>
+                    <div class="cursoPromo col-xl-4 col-lg-4 col-md-6">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dzC2EdGeSFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>Musicalidad para bailadores</h3>
+                    </div>
+                    <div class="cursoPromo">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mh5UWR8BLm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>Rueda de Casino</h3>
+                    </div>
+                    <div class="cursoPromo">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/h2MAJYIMVw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>Afrocubano y su aplicación en la Timba</h3>
+                    </div>
+                </section>
             </div>
-        </article>
-    </section>
-    <section class="Cursos">
-        <article>
-            <h2>Cursos Online</h2>
-            <div class="cursoPromo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dzC2EdGeSFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h3>Musicalidad para bailadores</h3>
-            </div>
-            <div class="cursoPromo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/mh5UWR8BLm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h3>Rueda de Casino</h3>
-            </div>
-            <div class="cursoPromo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/h2MAJYIMVw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h3>Afrocubano y su aplicación en la Timba</h3>
-            </div>
-        </article>
-    </section>
+        </main>
 
-    <footer class="footer">
-        <p>Todos los derechos reservados - 2023</p>
-        <ul>
-            <li><a class="redesFoot" href="https://www.facebook.com/adrian.f.amarillo/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
-            <li><a class="redesFoot" href="https://www.instagram.com/adroamarello/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a class="redesFoot" href="https://www.youtube.com/channel/UCqYCBEVkzkN7gnTI9ehEZAA" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-        </ul>
+        <footer class="footer container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                <p>Todos los derechos reservados - 2023</p>
+                <ul>
+                    <li><a class="redesFoot" href="https://www.facebook.com/adrian.f.amarillo/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a class="redesFoot" href="https://www.instagram.com/adroamarello/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a class="redesFoot" href="https://www.youtube.com/channel/UCqYCBEVkzkN7gnTI9ehEZAA" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul> 
+                </div>
+            </div>      
+        </footer>  
         
-    </footer>
-    
     <!-- LINK JS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     

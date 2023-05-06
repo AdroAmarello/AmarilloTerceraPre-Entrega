@@ -1,17 +1,32 @@
+// Variables //
+@import './settings/variables';
+
+// Mixins //
+@import './settings/mixins';
+
 // Reseteo de Css //
-@use './base/reset';
+@import './base/reset';
 
 // Tipografía y tamaño de rem //
-@use './base/typo';
+@import './base/typo';
 
 // Header-Nav //
-@use './layout/header';
+@import './layout/header';
+
+// Footer //
+@import './layout/footer';
 
 // Componentes //
-@use './components/buttons';
+@import './components/buttons';
 
 // Base //
-@use './base/base';
+@import './base/base';
 
 // Index //
-@use './views/home';
+@import './views/inicio';
+
+// Bio //
+@import './views/bio';
+
+// Talleres y Cursos //
+@import './views/talleresycursos';

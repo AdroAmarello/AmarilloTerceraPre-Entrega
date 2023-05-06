@@ -1,0 +1,37 @@
+.bio {
+    margin: 20px auto;
+    align-items: center;
+    padding: 20px 0 40px;
+
+    .noPadd {
+        padding: 0;
+
+        .TextoBio_1, .TextoBio_2 {
+            margin-bottom: 40px;
+
+            h1, h2 {
+                font-size: $titulo;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            p {
+                font-size: $parrafo;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .ImgBio {
+        height: 100%;
+        padding: 0px 40px;
+        display: inline;
+        text-align: center;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

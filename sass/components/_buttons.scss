@@ -3,8 +3,8 @@
     display: none;
 }
 .volverArriba{
-    font-size: 50px;
-    color: gray;
+    font-size: $botonTop;
+    color: $colorBotonTop;
     position: fixed;
     bottom: 120px;
     left: 15px;

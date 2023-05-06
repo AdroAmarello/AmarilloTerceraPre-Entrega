@@ -1,0 +1,29 @@
+.footer {
+    background-color: $colorPrincipal;
+    padding: 10px;
+    box-shadow: 0 1px 10px $colorSombra;
+    
+    p {
+        font-size: $parrafo;
+        text-align: right;
+        margin-bottom: 0;
+    }
+
+    ul {
+        text-align: center;
+
+        li {
+            display: inline;
+
+            .redesFoot {
+                font-size: $subtitulo;
+                margin: 10px;
+
+                &:hover {
+                    @include hovers;
+                }
+            }
+        }
+    }
+
+}
