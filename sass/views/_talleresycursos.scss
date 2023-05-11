@@ -4,18 +4,14 @@
     padding: 20px 0 40px;
     border-bottom: dashed 1px $colorSeparador;
     
-    .noPadd {
-        padding: 0;
-    }
-    
-
     .TextoTalleres {
-        margin-bottom: 40px;
-
+        margin: 0 0 40px;
+        padding: 0 40px;
+    
         h1 {
             font-size: $titulo;
             margin-bottom: 15px;
-            text-align: left;
+            text-align: center;
         }
 
         p {
@@ -44,6 +40,7 @@
                 font-style: normal;
 
                 a {
+                    font-style: italic;
                     text-decoration: underline;
 
                     &:hover {
@@ -53,15 +50,44 @@
         }
     }
 
-    .ImgTalleres {
-        height: 100%;
-        padding: 0 40px;
+    .CalTalleres {
+        padding: 0 40px 20px;
         @include displayImg;
 
-        img {
-            object-fit: cover;
+        iframe {
             width: 100%;
-            height: 100%;
+            height: 300px;
+        }
+
+        
+    }
+}
+
+.Cursos {
+    @extend .Talleres;
+    border: none;
+
+    .textoCursos {
+        text-align: center;
+        
+        h2 {
+            font-size: $titulo;
+            margin-bottom: 30px;
+        }
+    }
+
+    .cursoPromo {
+        padding: 0 20px;
+
+        iframe {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 15px;
+        }
+        h3{
+            font-size: $subtitulo;
+            font-style: italic;
+            margin-bottom: 15px;
         }
     }
 }

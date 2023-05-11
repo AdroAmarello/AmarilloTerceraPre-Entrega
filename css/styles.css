@@ -210,6 +210,11 @@ article .row {
 .tyc_blgImg img {
   height: 200px;
 }
+.tyc_blgImg iframe {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 15px;
+}
 
 .bio {
   margin: 20px auto;
@@ -221,6 +226,7 @@ article .row {
 }
 .bio .noPadd .TextoBio_1, .bio .noPadd .TextoBio_2 {
   margin-bottom: 40px;
+  text-align: justify;
 }
 .bio .noPadd .TextoBio_1 h1, .bio .noPadd .TextoBio_1 h2, .bio .noPadd .TextoBio_2 h1, .bio .noPadd .TextoBio_2 h2 {
   font-size: 2.5rem;
@@ -229,6 +235,7 @@ article .row {
 }
 .bio .noPadd .TextoBio_1 p, .bio .noPadd .TextoBio_2 p {
   font-size: 1.5rem;
+  text-align: justify;
   margin-bottom: 15px;
 }
 .bio .ImgBio {
@@ -243,63 +250,84 @@ article .row {
   height: 100%;
 }
 
-.Talleres {
+.Talleres, .Cursos {
   margin: 20px auto;
   align-items: center;
   padding: 20px 0 40px;
   border-bottom: dashed 1px #555555;
 }
-.Talleres .noPadd {
-  padding: 0;
+.Talleres .TextoTalleres, .Cursos .TextoTalleres {
+  margin: 0 0 40px;
+  padding: 0 40px;
 }
-.Talleres .TextoTalleres {
-  margin-bottom: 40px;
-}
-.Talleres .TextoTalleres h1 {
+.Talleres .TextoTalleres h1, .Cursos .TextoTalleres h1 {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  text-align: left;
+  text-align: center;
 }
-.Talleres .TextoTalleres p {
+.Talleres .TextoTalleres p, .Cursos .TextoTalleres p {
   font-size: 1.5rem;
   margin-bottom: 15px;
   text-align: justify;
 }
-.Talleres .TextoTalleres h3 {
+.Talleres .TextoTalleres h3, .Cursos .TextoTalleres h3 {
   font-size: 2rem;
   margin-left: 15px;
   margin-bottom: 10px;
   text-decoration: underline;
 }
-.Talleres .TextoTalleres .proxTalleres {
+.Talleres .TextoTalleres .proxTalleres, .Cursos .TextoTalleres .proxTalleres {
   margin-left: 15px;
   padding-left: 15px;
   list-style-type: square;
   font-size: 1.5rem;
   font-style: italic;
 }
-.Talleres .TextoTalleres .mesTalleres {
+.Talleres .TextoTalleres .mesTalleres, .Cursos .TextoTalleres .mesTalleres {
   margin-left: 15px;
   font-style: normal;
 }
-.Talleres .TextoTalleres .mesTalleres a {
+.Talleres .TextoTalleres .mesTalleres a, .Cursos .TextoTalleres .mesTalleres a {
+  font-style: italic;
   text-decoration: underline;
 }
-.Talleres .TextoTalleres .mesTalleres a:hover {
+.Talleres .TextoTalleres .mesTalleres a:hover, .Cursos .TextoTalleres .mesTalleres a:hover {
   color: #ffffff;
   text-shadow: 1px 1px 1px #000000;
   background: content-box linear-gradient(transparent, #0000ff);
 }
-.Talleres .ImgTalleres {
-  height: 100%;
-  padding: 0 40px;
+.Talleres .CalTalleres, .Cursos .CalTalleres {
+  padding: 0 40px 20px;
   display: inline-block;
   text-align: center;
 }
-.Talleres .ImgTalleres img {
-  object-fit: cover;
+.Talleres .CalTalleres iframe, .Cursos .CalTalleres iframe {
   width: 100%;
-  height: 100%;
+  height: 300px;
+}
+
+.Cursos {
+  border: none;
+}
+.Cursos .textoCursos {
+  text-align: center;
+}
+.Cursos .textoCursos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.Cursos .cursoPromo {
+  padding: 0 20px;
+}
+.Cursos .cursoPromo iframe {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 15px;
+}
+.Cursos .cursoPromo h3 {
+  font-size: 2rem;
+  font-style: italic;
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

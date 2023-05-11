@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="shortcut icon" href="multimedia/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../multimedia/favicon.png" type="image/x-icon">
         <title>Juan Ratón Pérez - Sitio Oficial</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,11 +23,11 @@
         <span class="top" id="topPagina"></span>
         <header>
             <nav class="headerNav">
-                <div class="headerLogo">
+                <div  class="navLogo">
                     <a href="../index.html"><img src="../multimedia/JuanPerezLogo.png" alt="Juan Perez Firma"></a> 
                 </div>
-                <div class="headerMenu">
-                    <ul class="menuNav">
+                <div class="navMenu">
+                    <ul class="menuList">
                         <li>
                             <a href="../index.html">Inicio</a>
                         </li>
@@ -46,13 +46,13 @@
                     </ul>
                 </div>
             </nav>
-            <div class="volverArriba">
-                <a href="#topPagina"><i class="fa-solid fa-circle-chevron-up"></i></a>
+            <div>
+                <a href="#topPagina"><i class="volverArriba fa-solid fa-circle-chevron-up"></i></a>
             </div>
         </header>
-    <main class="blog">
-        <section class="Blog_1">
-            <div class="TextoBlog_1">
+    <main class="container blog">
+        <section class="row Blog_1">
+            <div class="TextoBlog_1 col-xl-7">
                 <h1>Un paseo por La Habana</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt ex nam officia nihil illum velit, fugiat provident perferendis soluta delectus quaerat culpa, distinctio nemo rerum laudantium, officiis sit laboriosam placeat minima sapiente architecto suscipit.</p>
                 <p>Placeat harum, deserunt quis praesentium officia non eligendi sed dolorem ullam sit sapiente ipsam doloremque, repellat blanditiis delectus assumenda veniam vitae eos sequi culpa voluptatem velit libero nihil? Enim autem culpa temporibus animi, voluptate, dolor porro dolore nulla, neque quae vel quibusdam iste nihil quidem blanditiis tenetur placeat nostrum voluptates dolores at. 
@@ -60,12 +60,15 @@
                 <p>Placeat harum, deserunt quis praesentium officia non eligendi sed dolorem ullam sit sapiente ipsam doloremque, repellat blanditiis delectus assumenda veniam vitae eos sequi culpa voluptatem velit libero nihil? Enim autem culpa temporibus animi, voluptate, dolor porro dolore nulla, neque quae vel quibusdam iste nihil quidem blanditiis tenetur placeat nostrum voluptates dolores at. 
                 </p>
             </div>
-            <div class="blogImg ImgBlog_1">
+            <div class="blogImg ImgBlog_1 col-xl-5">
                 <img src="../multimedia/Habana_blog.jpeg" alt="Juan Perez">
             </div>
         </section>
-        <section class="Blog_2">
-            <div class="TextoBlog_2">
+        <section class="row Blog_2">
+            <div class="blogImg ImgBlog_2 col-xl-5">
+                <img src="../multimedia/Varadero_blog.jpeg" alt="Juan Perez">
+            </div>
+            <div class="TextoBlog_2 col-xl-7">
                 <h2>Varadero y su agua cristalina</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt ex nam officia nihil illum velit, fugiat provident perferendis soluta delectus quaerat culpa, distinctio nemo rerum laudantium, officiis sit laboriosam placeat minima sapiente architecto suscipit. Placeat harum, deserunt quis praesentium officia non eligendi sed dolorem  
                 </p>
@@ -76,22 +79,23 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt ex nam officia nihil illum velit, fugiat provident perferendis soluta delectus quaerat culpa, distinctio nemo rerum laudantium, officiis sit laboriosam 
                 </p>
             </div>
-            <div class="blogImg ImgBlog_2">
-                <img src="../multimedia/Varadero_blog.jpeg" alt="Juan Perez">
-            </div>
+            
         </section>
         
     </main>
-    <footer class="footer">
-        <p>Todos los derechos reservados - 2023</p>
-        <ul>
-            <li><a class="redesFoot" href="https://www.facebook.com/adrian.f.amarillo/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
-            <li><a class="redesFoot" href="https://www.instagram.com/adroamarello/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a class="redesFoot" href="https://www.youtube.com/channel/UCqYCBEVkzkN7gnTI9ehEZAA" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-        </ul>
-        
-    </footer>
-    
+    <footer class="footer container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+            <p>Todos los derechos reservados - 2023</p>
+            <ul>
+                <li><a class="redesFoot" href="https://www.facebook.com/adrian.f.amarillo/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a class="redesFoot" href="https://www.instagram.com/adroamarello/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a class="redesFoot" href="https://www.youtube.com/channel/UCqYCBEVkzkN7gnTI9ehEZAA" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul> 
+            </div>
+        </div>      
+    </footer>  
+
     <!-- LINK JS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
