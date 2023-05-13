@@ -1,0 +1,54 @@
+/* CONTACTO */
+
+.Contacto{
+    width: 100%;
+    height: 700px;
+    position:relative;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: dashed 1px grey;
+}
+.conTexto {
+    width: 480px;
+    height: 100%;
+    padding: 20px 40px;
+    margin: 0px auto;  
+}
+.conTexto h1{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.conTexto form {
+    width: 400px;
+    padding: 30px;
+    display: inline-block;
+    background-color: lightgray;
+    border: solid 1px black;
+    
+}
+.conTexto form label {
+    font-size: 15px;
+    margin-bottom: 5px;
+    display: block;
+}
+.conTexto input {
+    text-align: left;
+    width: 340px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.formInteres input{
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+.formComentario {
+    width: 340px;
+    height: 100px;
+    resize: none;
+}
+.formBotones {
+    margin-top: 15px;
+    text-align: center;
+}

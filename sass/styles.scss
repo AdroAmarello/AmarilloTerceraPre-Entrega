@@ -1,6 +1,9 @@
 // Variables //
 @import './settings/variables';
 
+// Media Queries //
+@import './layout/media-queries';
+
 // Mixins //
 @import './settings/mixins';
 
@@ -30,3 +33,10 @@
 
 // Talleres y Cursos //
 @import './views/talleresycursos';
+
+// Blog //
+@import './views/blog';
+
+// Contacto //
+@import './views/contacto';
+

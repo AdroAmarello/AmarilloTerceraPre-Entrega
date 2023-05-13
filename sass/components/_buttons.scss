@@ -1,6 +1,10 @@
 // Botón para ir al comienzo de página //
 .top {
     display: none;
+
+    @include mediaquery(850px){
+        display: inline;
+    }
 }
 .volverArriba{
     font-size: $botonTop;
@@ -10,4 +14,8 @@
     left: 15px;
     opacity: .7;
     display: none;
+
+    @include mediaquery(850px){
+        display: block;
+    }
 }

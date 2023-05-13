@@ -1,3 +1,4 @@
+/* MEDIA QUERIES */
 * {
   margin: 0;
   padding: 0;
@@ -35,11 +36,17 @@ header {
   top: 0px;
   z-index: 1000;
   display: flex;
+  align-items: center;
 }
 .headerNav .navLogo {
   width: 20%;
   height: 100%;
   padding: 10px 30px;
+}
+@media screen and (max-width: 685px) {
+  .headerNav .navLogo {
+    display: none;
+  }
 }
 .headerNav .navLogo a {
   display: inline-block;
@@ -59,6 +66,12 @@ header {
   height: 100%;
   text-align: right;
 }
+@media screen and (max-width: 685px) {
+  .headerNav .navMenu {
+    width: 100%;
+    text-align: center;
+  }
+}
 .headerNav .navMenu .menuList {
   height: 100%;
   padding-right: 15px;
@@ -69,11 +82,21 @@ header {
   height: 100%;
   font-size: 2.5rem;
 }
+@media screen and (max-width: 795px) {
+  .headerNav .navMenu .menuList li {
+    font-size: 2rem;
+  }
+}
 .headerNav .navMenu .menuList li a {
-  display: inherit;
+  display: flex;
   width: 100%;
   height: 100%;
   padding: 25px 15px;
+}
+@media screen and (max-width: 850px) {
+  .headerNav .navMenu .menuList li a {
+    padding: 25px 10px;
+  }
 }
 .headerNav .navMenu .menuList li a:hover {
   color: #ffffff;
@@ -111,6 +134,11 @@ header {
 .top {
   display: none;
 }
+@media screen and (max-width: 850px) {
+  .top {
+    display: inline;
+  }
+}
 
 .volverArriba {
   font-size: 5rem;
@@ -120,6 +148,11 @@ header {
   left: 15px;
   opacity: 0.7;
   display: none;
+}
+@media screen and (max-width: 850px) {
+  .volverArriba {
+    display: block;
+  }
 }
 
 p {
@@ -328,6 +361,67 @@ article .row {
   font-size: 2rem;
   font-style: italic;
   margin-bottom: 15px;
+}
+
+/* CONTACTO */
+.Contacto {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: dashed 1px grey;
+}
+
+.conTexto {
+  width: 480px;
+  height: 100%;
+  padding: 20px 40px;
+  margin: 0px auto;
+}
+
+.conTexto h1 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.conTexto form {
+  width: 400px;
+  padding: 30px;
+  display: inline-block;
+  background-color: lightgray;
+  border: solid 1px black;
+}
+
+.conTexto form label {
+  font-size: 15px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.conTexto input {
+  text-align: left;
+  width: 340px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.formInteres input {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+}
+
+.formComentario {
+  width: 340px;
+  height: 100px;
+  resize: none;
+}
+
+.formBotones {
+  margin-top: 15px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
