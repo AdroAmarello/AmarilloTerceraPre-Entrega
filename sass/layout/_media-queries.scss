@@ -1,4 +1,14 @@
-/* MEDIA QUERIES */
+/* MEDIA QUERIES DESKTOP FIRST*/
+@mixin desktop-xl {
+    @media screen and (max-width: 1980px) {
+        @content;        
+    }
+}
+@mixin desktop-lg {
+    @media screen and (max-width: 1200px) {
+        @content;        
+    }
+}
 @mixin desktop {
     @media screen and (max-width: 1024px) {
         @content;        

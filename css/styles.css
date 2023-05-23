@@ -1,4 +1,5 @@
-/* MEDIA QUERIES */
+@charset "UTF-8";
+/* MEDIA QUERIES DESKTOP FIRST*/
 * {
   margin: 0;
   padding: 0;
@@ -37,16 +38,13 @@ header {
   z-index: 1000;
   display: flex;
   align-items: center;
+  /* Boton menú responsive */
 }
 .headerNav .navLogo {
   width: 20%;
   height: 100%;
   padding: 10px 30px;
-}
-@media screen and (max-width: 685px) {
-  .headerNav .navLogo {
-    display: none;
-  }
+  z-index: 1500;
 }
 .headerNav .navLogo a {
   display: inline-block;
@@ -61,16 +59,89 @@ header {
   border: solid 2px #000000;
   box-shadow: 0px 0px 3px #0000ff;
 }
+@media screen and (max-width: 685px) {
+  .headerNav .navLogo {
+    width: 40%;
+  }
+}
+.headerNav #btn-menu, .headerNav .btn-menu, .headerNav .navMenu-collapse {
+  display: none;
+}
+.headerNav .navMenu-collapse {
+  width: 100%;
+  background-color: #e0ffff;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-shadow: 0 1px 10px #000000;
+  z-index: 1250;
+  transition: all 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.headerNav .navMenu-collapse .menuList-collapse {
+  transition: all 0.5s ease;
+  transform: translateX(100%);
+  margin-bottom: 0;
+  padding: 80px 0 0;
+}
+.headerNav .navMenu-collapse .menuList-collapse li {
+  display: block;
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+.headerNav .navMenu-collapse .menuList-collapse li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-left: 15px;
+}
+.headerNav .navMenu-collapse .menuList-collapse li a:hover {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+}
+.headerNav .navMenu-collapse .menuList-collapse li:hover {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+  background: content-box linear-gradient(transparent, #0000ff);
+}
+.headerNav .navMenu-collapse .menuList-collapse li label {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.headerNav .navMenu-collapse .menuList-collapse li label:hover {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+  background: content-box linear-gradient(transparent, #0000ff);
+  border-radius: 5px;
+}
+@media screen and (max-width: 685px) {
+  .headerNav .btn-menu {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    display: block;
+    font-size: 2.5rem;
+  }
+  .headerNav .btn-menu label {
+    cursor: pointer;
+  }
+  .headerNav .btn-menu label:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background: content-box linear-gradient(transparent, #0000ff);
+    border-radius: 5px;
+  }
+}
 .headerNav .navMenu {
   width: 80%;
   height: 100%;
   text-align: right;
-}
-@media screen and (max-width: 685px) {
-  .headerNav .navMenu {
-    width: 100%;
-    text-align: center;
-  }
 }
 .headerNav .navMenu .menuList {
   height: 100%;
@@ -104,6 +175,33 @@ header {
 }
 .headerNav .navMenu .menuList li:hover {
   background: content-box linear-gradient(transparent, #0000ff);
+}
+@media screen and (max-width: 685px) {
+  .headerNav .navMenu {
+    display: none;
+  }
+}
+.headerNav #btn-menu:checked ~ .navMenu-collapse {
+  opacity: 1;
+  visibility: visible;
+}
+.headerNav #btn-menu:checked ~ .navMenu-collapse .menuList-collapse {
+  transform: translateX(0);
+}
+@media screen and (max-width: 1024px) {
+  .headerNav #btn-menu:checked ~ .navMenu-collapse {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerNav #btn-menu:checked ~ .navMenu-collapse {
+    display: none;
+  }
+}
+@media screen and (max-width: 685px) {
+  .headerNav #btn-menu:checked ~ .navMenu-collapse {
+    display: block;
+  }
 }
 
 .footer {
@@ -258,7 +356,6 @@ article .row {
   padding: 0;
 }
 .bio .noPadd .TextoBio_1, .bio .noPadd .TextoBio_2 {
-  margin-bottom: 40px;
   text-align: justify;
 }
 .bio .noPadd .TextoBio_1 h1, .bio .noPadd .TextoBio_1 h2, .bio .noPadd .TextoBio_2 h1, .bio .noPadd .TextoBio_2 h2 {
@@ -270,6 +367,9 @@ article .row {
   font-size: 1.5rem;
   text-align: justify;
   margin-bottom: 15px;
+}
+.bio .noPadd .TextoBio_1 {
+  margin-bottom: 40px;
 }
 .bio .ImgBio {
   height: 100%;
@@ -363,65 +463,127 @@ article .row {
   margin-bottom: 15px;
 }
 
+.Blog_1, .Blog_2 {
+  margin: 20px auto;
+  align-items: center;
+  padding: 20px 0;
+}
+.Blog_1 h1, .Blog_1 h2, .Blog_2 h1, .Blog_2 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.blogTexto {
+  /* background-color: cyan; */
+  text-align: justify;
+  padding: 0 40px;
+}
+.blogTexto p {
+  font-size: 1.5rem;
+}
+
+.TextoBlog_2 h2 {
+  font-style: 1.5rem;
+}
+
+.blogImg {
+  height: 45em;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .blogImg {
+    height: auto;
+  }
+}
+.blogImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 1em 0;
+}
+@media screen and (max-width: 1980px) {
+  .blogImg img {
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blogImg img {
+    object-fit: contain;
+  }
+}
+
 /* CONTACTO */
 .Contacto {
   width: 100%;
-  height: 700px;
-  position: relative;
-  margin: 20px 0;
+  margin-top: 20px;
   padding-bottom: 20px;
-  border-bottom: dashed 1px grey;
 }
 
 .conTexto {
-  width: 480px;
-  height: 100%;
+  width: 100%;
   padding: 20px 40px;
-  margin: 0px auto;
 }
 
 .conTexto h1 {
   text-align: center;
-  font-size: 25px;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.conTexto form {
-  width: 400px;
+form {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
   padding: 30px;
-  display: inline-block;
-  background-color: lightgray;
-  border: solid 1px black;
+  background-color: #e0ffff;
+  box-shadow: 0 1px 10px #000000;
 }
 
 .conTexto form label {
-  font-size: 15px;
-  margin-bottom: 5px;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
   display: block;
 }
 
-.conTexto input {
+.conTexto .datos input {
   text-align: left;
-  width: 340px;
-  font-size: 15px;
+  width: 100%;
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
 .formInteres input {
   display: inline-block;
-  width: auto;
+  width: 20%;
   margin-right: 10px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 
 .formComentario {
-  width: 340px;
-  height: 100px;
+  width: 100%;
+  height: 200px;
   resize: none;
+  margin-bottom: 15px;
 }
 
 .formBotones {
-  margin-top: 15px;
   text-align: center;
+}
+
+.formBotones input {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

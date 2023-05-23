@@ -7,7 +7,6 @@
         padding: 0;
 
         .TextoBio_1, .TextoBio_2 {
-            margin-bottom: 40px;
             text-align: justify;
 
             h1, h2 {
@@ -21,6 +20,9 @@
                 text-align: justify;
                 margin-bottom: 15px;
             }
+        }
+        .TextoBio_1 {
+            margin-bottom: 40px;
         }
     }
 
